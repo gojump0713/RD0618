@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026년 6월 3째주 주요 R&amp;D사업 공고 보고</title>
+  <meta name="description" content="2026년 6월 3째주 정책지원사업 브리핑 · 접수중 공고 현황 보고" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#2c2950" />
+
+  <!-- Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <!-- Google Material Symbols (monochrome) -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300,0..1,0" />
+  <!-- Font Awesome (supplement) -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- ===== Top Navigation ===== -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#top" class="brand">
+        <span class="material-symbols-rounded brand__mark">hub</span>
+        <span class="brand__text">
+          <strong>R&amp;D Briefing</strong>
+          <small>2026 · 6월 3째주</small>
+        </span>
+      </a>
+
+      <nav class="mainnav" aria-label="주요 사업 바로가기">
+        <button class="mainnav__item" data-detail="purchase">
+          <span class="material-symbols-rounded">handshake</span>
+          <span>(중기부) 구매연계<i>국내수요처</i></span>
+        </button>
+        <button class="mainnav__item" data-detail="knowledge">
+          <span class="material-symbols-rounded">verified</span>
+          <span>(산업통상부) 지식서비스산업기술개발사업</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">
+        <span class="material-symbols-rounded">campaign</span>
+        정책 지원 사업 브리핑 · Vol.26-013
+      </p>
+      <h1 class="hero__title">2026년 6월 3째주<br />주요 R&amp;D사업 공고 보고</h1>
+      <p class="hero__desc">
+        뉴스레터(2026-06-17) 기준 <strong>‘접수중’</strong> 공고만 정리했습니다.
+        상단 메뉴의 두 핵심 사업은 클릭 시 세부 내용을 확인할 수 있습니다.
+      </p>
+      <ul class="hero__stats" id="heroStats"></ul>
+    </div>
+  </section>
+
+  <!-- ===== 접수중 목록 ===== -->
+  <main class="wrap">
+    <div class="section-head">
+      <h2 class="section-head__title">
+        <span class="material-symbols-rounded">play_circle</span>
+        접수중 공고
+      </h2>
+      <div class="filters" id="filters"></div>
+    </div>
+
+    <section class="grid" id="cardGrid" aria-live="polite"></section>
+
+    <p class="foot-note">
+      <span class="material-symbols-rounded">info</span>
+      본 보고는 CCCR Members Only 기업지원 뉴스레터[Vol.26-013] ‘접수중’ 항목을 기반으로 작성되었습니다.
+      마감일 18시 이후 접수·수정이 불가하므로 2~3일 전 제출을 권장합니다.
+    </p>
+  </main>
+
+  <footer class="sitefoot">
+    <span class="material-symbols-rounded">corporate_fare</span>
+    2026 R&amp;D 공고 현황 보고 · 내부 참고용
+  </footer>
+
+  <!-- ===== Detail Modal ===== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="닫기">
+        <span class="material-symbols-rounded">close</span>
+      </button>
+      <div class="modal__body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
